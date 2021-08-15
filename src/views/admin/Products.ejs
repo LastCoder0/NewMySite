@@ -1,0 +1,74 @@
+<%-include('./_header.ejs')  %>
+
+<div class="container-fluid">
+    <!-- ============================================================== -->
+    <!-- Start Page Content -->
+    <!-- ============================================================== -->
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="white-box">
+                <h3 class="box-title">Tüm Ürünler</h3>
+                <a  class="btn btn-outline-info" href="/me/ProductsAdd">Yeni Ürün Ekle</a>
+                <div class="table-responsive">
+                    <table class="table text-nowrap">
+                        <thead>
+                            <tr>
+                                <th class="border-top-0">ID</th>
+                                <th class="border-top-0">Ürün İsmi</th>
+                                <th class="border-top-0">Ürün Kategori</th>
+                                <th class="border-top-0">Ürün Fiyati</th>
+                                <th class="border-top-0">Ürün Adedi</th>
+                                <th class="border-top-0">Ürün Tarihi</th>
+                                <th class="border-top-0">Ürün Alasni</th>
+
+
+                                <th class="border-top-0">Ürün Silme</th>
+                                <th class="border-top-0">Ürün Güncelleme</th>
+                                <th class="border-top-0">Ürün Durum</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <% product.forEach(product => { %>
+                            <tr>
+                                <td><%-product._id %> </td>
+                                <td><%-product.productName%></td>
+                                <td><%-product.productCategory %></td>
+                                
+                                <td><%-product.productPrice %></td>
+                                <td><%-product.productAmount %></td>
+                                <td><%-product.createdDate %></td>
+                                <td><%-product.productRegion %></td>
+
+                                <td><a class="btn btn-warning" href="/me/ProductDelete?id=<%- product._id %>">Ürün Sil</a></td>
+                                <td><a class="btn btn-primary" href="/me/ProductUpdate?id=<%- product._id %>">Ürün Güncelle</a></td>
+                                <% if (product.isActive==false) { %>
+                                    <td><a class="btn btn-danger" href="/me/ProductIsAktif?id=<%- product._id %>">Ürün Pasif</a></td>
+
+                                <% }else { %>
+                                    <td><a class="btn btn-success" href="/me/ProductIsAktif?id=<%- product._id %>">Ürün Aktif</a></td>
+
+                               <% } %> 
+
+                            </tr>
+                            
+                          <% }) %>
+                      
+                           
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End PAge Content -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Right sidebar -->
+    <!-- ============================================================== -->
+    <!-- .right-sidebar -->
+    <!-- ============================================================== -->
+    <!-- End Right sidebar -->
+    <!-- ============================================================== -->
+</div>

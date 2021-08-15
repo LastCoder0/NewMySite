@@ -1,0 +1,76 @@
+<%- include("./partials/_header.ejs") %> 
+<!-- Breadcrumb Begin -->
+ <div class="breadcrumb-option">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb__links">
+                    <a href="/"><i class="fa fa-home"></i>Anasayfa</a>
+                    <a href="/siparislerim">Siparislerim</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb End -->
+
+<!-- Blog Details Section Begin -->
+<section class="blog-details spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <div class="blog__sidebar">
+                    <div class="blog__sidebar__item">
+                        <div class="section-title">
+                            <h4>Hesabim</h4>
+                            <p><%- admin.name %> </p>
+                            <p>idsi :<%- admin.id %> </p>
+                        </div>
+                        <ul>
+                            <li class="a"><i class="fas fa-box"></i> <a  style="margin-left: 5px;" href="/siparislerim">Siparislerim </a></li>
+                            <hr>
+                            <li class="a"><i class="fas fa-comment-dots"></i><a  style="margin-left: 5px;" href="/degerlendirmelerim">Değerlendirmelerim</span></a></li>
+                            <hr>
+                            <li class="a" ><i class="fas fa-wallet"></i><a  style="margin-left: 5px;" href="/cüzdanim">Cüzdanim</a></li>
+                            <hr>
+                            <li class="a"><i class="fas fa-user"></i><a  style="margin-left: 5px;" href="/kullanicibilgilerim">Kullanici Bilgilerim </a></li>
+                            <hr>
+                            <li class="a"><i  class="fas fa-map-marker-alt"></i><a style="margin-left: 5px;" href="/adresbilgilerim">Adres Bilgilerim </a></li>
+                            <hr>
+                            <li class="a"><i class="far fa-credit-card"></i><a  style="margin-left: 5px;" href="/kayitlikartlarim">Kayıtlı Kartlarım </a></li>
+                            <hr>
+                            <li class="a"><i class="fas fa-question-circle"></i><a  style="margin-left: 5px;"href="/help">Yardım </a></li>
+                            <hr>
+                            <li class="a"><i class="fal fa-sign-out"></i><a  style="margin-left: 5px;"href="/logout">Çıkış </a></li>
+                        </ul>
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                      Siparislerim
+                    </div>
+                  </div>
+                <div class="card" style="margin-top: 20px;">
+                    <h5 class="card-header">Featured</h5>
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="margin-top: 20px;">
+                    <h5 class="card-header">Featured</h5>
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Blog Details Section End -->

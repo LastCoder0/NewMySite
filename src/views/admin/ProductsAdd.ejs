@@ -1,0 +1,103 @@
+<%-include('./_header.ejs')  %> 
+<div class="container-fluid">
+    <!-- ============================================================== -->
+    <!-- Start Page Content -->
+    <!-- ============================================================== -->
+    <!-- Row -->
+    <div class="row">
+        <!-- Column -->
+        <div class="col-lg-4 col-xlg-3 col-md-12">
+            <div class="white-box">
+                <div class="user-bg"> <img width="100%" alt="user" src="plugins/images/large/img1.jpg">
+                    <div class="overlay-box">
+                        <div class="user-content">
+                            <a href="javascript:void(0)"><img src="plugins/images/users/genu.jpg"
+                                    class="thumb-lg img-circle" alt="img"></a>
+                            <h4 class="text-white mt-2">User Name</h4>
+                            <h5 class="text-white mt-2">info@myadmin.com</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-btm-box mt-5 d-md-flex">
+                    <div class="col-md-4 col-sm-4 text-center">
+                        <h1>258</h1>
+                    </div>
+                    <div class="col-md-4 col-sm-4 text-center">
+                        <h1>125</h1>
+                    </div>
+                    <div class="col-md-4 col-sm-4 text-center">
+                        <h1>556</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Column -->
+        <!-- Column -->
+        <div class="col-lg-8 col-xlg-9 col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <form class="form-horizontal form-material" action="/me/ProductsAdd" method="POST">
+                        <div class="form-group mb-4">
+                            <label class="col-md-12 p-0">Ürün İsmi</label>
+                            <div class="col-md-12 border-bottom p-0">
+                                <input type="text" name="productName" 
+                                    class="form-control p-0 border-0" required> </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="example-product" class="col-md-12 p-0">Ürün Kategori</label>
+                            <div class="col-md-12 border-bottom p-0">
+                                <input type="text" name="productCategory"
+                                    class="form-control p-0 border-0" name="example-email"
+                                    id="example-product" required>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label class="col-md-12 p-0">Ürün Fiyati</label>
+                            <div class="col-md-12 border-bottom p-0">
+                                <input type="text" value="0" name="productPrice" class="form-control p-0 border-0" required>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label class="col-md-12 p-0">Ürün Stok Adedi</label>
+                            <div class="col-md-12 border-bottom p-0">
+                                <input type="text" value="0" name="productAmount" 
+                                    class="form-control p-0 border-0" required>
+                            </div>
+                        </div>
+                     
+                        <div class="form-group mb-4">
+                            <label class="col-sm-12">Alanini Seç</label>
+
+                            <div class="col-sm-12 border-bottom">
+                                <select  name="productRegion" class="form-select shadow-none p-0 border-0 form-control-line">
+                                    <option value="Erkek">Erkek</option>
+                                    <option value="Bayan">Bayan</option>
+                                    <option value="Cocuk">Cocuk</option>
+                                    <option value="Kozmetik">Kozmetik</option>
+                                    <option value="Aksesuar">Aksesuar</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn btn-success">Ürünü Ekle</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Column -->
+    </div>
+    <!-- Row -->
+    <!-- ============================================================== -->
+    <!-- End PAge Content -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Right sidebar -->
+    <!-- ============================================================== -->
+    <!-- .right-sidebar -->
+    <!-- ============================================================== -->
+    <!-- End Right sidebar -->
+    <!-- ============================================================== -->
+</div>
